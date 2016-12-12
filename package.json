@@ -1,0 +1,24 @@
+{
+  "name": "dompro",
+  "version": "0.0.0",
+  "description": "Dompro",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stremann/dompro.git"
+  },
+  "keywords": [
+    "dompro",
+    "virtual",
+    "dom"
+  ],
+  "author": "Roman Stremedlovskyi <stremann@yahoo.com> (https://github.com/stremann)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stremann/dompro/issues"
+  },
+  "homepage": "https://github.com/stremann/dompro#readme"
+}
