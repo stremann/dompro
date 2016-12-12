@@ -4,7 +4,10 @@
   "description": "Dompro",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:commonjs": "cross-env BABEL_ENV=commonjs babel src --out-dir lib",
+    "build:umd": "cross-env BABEL_ENV=commonjs NODE_ENV=development webpack src/index.js dist/dompro.js",
+    "build:umd:min": "cross-env BABEL_ENV=commonjs NODE_ENV=production webpack src/index.js dist/dompro.min.js",
+    "build": "npm run build:commonjs && npm run build:umd && npm run build:umd:min"
   },
   "repository": {
     "type": "git",
@@ -20,5 +23,14 @@
   "bugs": {
     "url": "https://github.com/stremann/dompro/issues"
   },
-  "homepage": "https://github.com/stremann/dompro#readme"
+  "homepage": "https://github.com/stremann/dompro#readme",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.20.0",
+    "babel-loader": "^6.2.9",
+    "babel-plugin-transform-react-jsx": "^6.8.0",
+    "babel-preset-es2015": "^6.18.0",
+    "cross-env": "^3.1.3",
+    "webpack": "^1.14.0"
+  }
 }
