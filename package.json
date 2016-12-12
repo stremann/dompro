@@ -14,7 +14,7 @@
     "test:watch": "npm test -- --watch",
     "test:coverage": "nyc npm test",
     "test:windows": "babel-node ./node_modules/babel-istanbul/lib/cli cover --dir ./coverage node_modules/mocha/bin/_mocha -- -R spec --ui bdd ./test/spec --recursive",
-    "test:report": "cat coverage/lcov.info | coveralls",
+    "test:report": "nyc report --reporter=text-lcov | coveralls",
     "check:src": "npm run test",
     "prepublish": "npm run clean && npm run check:src && npm run build"
   },
