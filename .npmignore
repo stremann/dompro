@@ -1,0 +1,11 @@
+# Intellij Idea project files
+.idea
+
+# Build config
+webpack.config.js
+
+# Compiler config
+.babelrc
+
+# Examples directory
+examples
