@@ -1,0 +1,31 @@
+{
+  "name": "dompro",
+  "version": "0.2.0",
+  "description": "Dompro",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel index.js --out-file bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stremann/dompro.git"
+  },
+  "keywords": [
+    "dompro",
+    "virtual",
+    "dom",
+    "list",
+    "examples"
+  ],
+  "author": "Roman Stremedlovskyi <stremann@yahoo.com> (https://github.com/stremann)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stremann/dompro/issues"
+  },
+  "homepage": "https://github.com/stremann/dompro#readme",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.20.0",
+    "babel-plugin-transform-react-jsx": "^6.8.0"
+  }
+}
