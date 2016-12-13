@@ -1,5 +1,6 @@
 import { createElement } from './createElement.js';
 import { hasChanged } from './hasChanged.js';
+import { updateProps } from './propHandler.js';
 
 export function updateDOM($parent, newNode, oldNode, index = 0) {
     if (!oldNode) {
@@ -16,6 +17,11 @@ export function updateDOM($parent, newNode, oldNode, index = 0) {
             $parent.childNodes[index]
         );
     } else if (newNode.type) {
+        updateProps(
+            $parent.childNodes[index],
+            newNode.props,
+            oldNode.props
+        );
         const newLength = newNode.children.length;
         const oldLength = oldNode.children.length;
         for (let i = 0; i < newLength || i < oldLength; i++) {

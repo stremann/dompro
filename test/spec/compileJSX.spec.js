@@ -24,4 +24,22 @@ describe('Compile JSX', () => {
         );
         expect(expected).to.deep.equal(actual);
     });
+
+    it('should handle empty props data provided', () => {
+        const expected = {
+            type: 'ul',
+            props: {},
+            children: [
+                {type: 'li', props: {}, children: ['item 1']},
+                {type: 'li', props: {}, children: ['item 2']}
+            ]
+        };
+        const actual = compileJSX(
+            'ul',
+            null,
+            compileJSX('li', {}, 'item 1'),
+            compileJSX('li', {}, 'item 2')
+        );
+        expect(expected).to.deep.equal(actual);
+    });
 });
