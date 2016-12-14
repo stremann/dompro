@@ -33,11 +33,12 @@ For example, you can drop a UMD build as a [`<script>` tag](https://unpkg.com/do
 The UMD builds make Dompro available as a `window.Dompro` global variable.
 
 The Dompro source code is written in ES2015 but it is precompiled both CommonJS and UMD builds to ES5 so they work in [any modern browser](http://caniuse.com/#feat=es5). 
-You don't need to use Babel or a module bundler to [get started with Dompro](https://github.com/stremann/dompro/blob/master/examples/counter/pure%20%2B%20dompro/index.html).
+You don't need to use Babel or a module bundler to [get started with Dompro](https://github.com/stremann/dompro/tree/master/examples/list).
 
 ### Examples
 
-* List ([source](https://github.com/stremann/dompro/tree/master/examples/list))
+* List: basic ([source](https://github.com/stremann/dompro/tree/master/examples/list))
+* List: props + events ([source](https://github.com/stremann/dompro/tree/master/examples/list-enhanced))
 
 ### Change Log
 
